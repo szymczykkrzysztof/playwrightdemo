@@ -1,5 +1,5 @@
 import { test, chromium, webkit, firefox } from "@playwright/test";
-import { lstat } from "fs";
+
 test("Browser support demo ", async () => {
   for (const browserType of [chromium, webkit, firefox]) {
     console.log("Running:", browserType.name());
